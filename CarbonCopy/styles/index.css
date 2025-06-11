@@ -1,0 +1,395 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c8c5c5;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8c5c5;
+    padding: 10px 20px;
+    margin-bottom: 70px;
+    text-overflow: ellipsis;
+}
+
+.nav .div {
+    font-size: 40px;
+    text-align: left;
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.li a {
+    text-decoration: none;
+    font-size: 50px;
+}
+
+#Mission{
+    color:#004B87;
+    text-decoration: none;
+}
+
+#About{
+    color:#DA291C;
+}
+
+#Contact{
+    color:#ffffff;
+}
+/*Nav*/
+
+/* Header */
+.header {
+    text-align: flex-start;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333; 
+    height: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Main Title */
+h1 {
+    text-align: flex-start;
+    margin-left: 40px;
+    font-size: 2rem;
+}
+
+/* Section 1 (Images) */
+.section {
+    display: flex;
+    justify-content: center;
+    background-color: #c8c5c5;
+    flex-direction: row;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.section img {
+    min-width: 10%;
+    width: 100%;
+    height: 350px;
+    background-color: #ccc;
+}
+
+/* Section 2 (Mission) */
+.section-two {
+    display: inline-block;
+    width: 100%;
+    background-color: #004B87;
+    text-align: flex-start; 
+    vertical-align: top;
+    padding: 20px 0;
+}
+
+.section-two h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.section-two p {
+    color: white;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+/* Section 3 (About) */
+.section-left {
+    display: inline-block;
+    width: 50%;
+    background-color: #DA291C;
+    text-align: flex-start;
+    vertical-align: top;
+    height: 300px;
+    overflow: auto;
+}
+
+.section-left h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.section-left p {
+    color: white;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+/* Section 4 (Contact) */
+.section-right {
+    display: inline-block;
+    width: 50%;
+    background-color: #ffffff;
+    text-align: flex-start;
+    vertical-align: top;
+    height: 300px;
+}
+
+.section-right h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.section-right p {
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+.section-right .input{
+    display: block;
+    background-color: #c8c5c5;
+    border-color: #c7c7c7;
+    border-width: 1px;
+    color: #3c3b3b;
+    width: calc(100% - 80px);
+    margin: 0 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section-right .button{
+    display: block;
+    margin: 5px 40px 5px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Section 5 (Dashboard) */
+.section-three {
+    background-color: #c8c5c5;
+    padding: 20px 0px;
+    text-align: flex-start;
+}
+
+.section-three h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.section-three p {
+    font-size: 15px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+/* Dashboard Content */
+.dash-content {
+    display: flex;
+    justify-content: space-between; /* Espace entre les chips */
+    align-items: flex-start; /* Aligner les chips en haut */
+    padding: 20px 40px;
+    gap: 20px; /* Espacement entre les chips */
+}
+
+.chip {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 250px;
+    width: calc(33.33% - 20px); /* Diviser en 3 colonnes avec espace */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: flex-start;
+}
+
+.chip .title-dash {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.chip .subtitle {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color: #aeaeae;
+}
+
+.chip .chip-content {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.4;
+    overflow: auto;
+}
+
+.chip {
+    position: relative; /* Permet de positionner les enfants avec position absolue */
+    padding-bottom: 30px; /* Ajoute un espace pour éviter que le contenu chevauche le lien */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-link {
+    position: absolute; /* Positionne l'élément par rapport à son parent */
+    bottom: 10px; /* Distance par rapport au bas de la div */
+    left: 10px; /* Distance par rapport au bord gauche */
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.article-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #c8c5c5;
+    padding: 20px 0px;
+    display: flex; /* Ajout de flexbox */
+    justify-content: space-between; /* Div à gauche et ul à droite */
+    align-items: center;
+    font-size: 15px;
+    border-top:#333 1px solid;
+    margin: 40px
+}
+
+.footer_div {
+    margin-bottom: 10px;
+    text-align: flex-start;
+}
+
+.footer_ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+}
+
+.footer_li a {
+    color: #333;
+    font-weight: lighter;   
+    text-align: flex-end;
+    text-decoration: underline;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.modal-content {
+    background-color: #c8c5c5;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    position: relative; /* Permet de positionner le close-button-container */
+}
+
+.modal .close-button-container {
+    position: absolute;
+    top: -70px; /* Place la fenêtre au-dessus de la modale */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c8c5c5;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal .close-button {
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: none;
+}
+
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.alignment-widget {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.align-button {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #c8c5c5;
+    border: none;
+    font-weight: lighter;
+}
+
+.align-button.bold {
+    font-weight: bold;
+}
