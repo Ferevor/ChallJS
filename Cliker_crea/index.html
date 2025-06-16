@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clicker Game</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <div id="game-container">
-        <h1>Clicker Game</h1>
-        <div id="currency-display">Currency: 0</div>
-        <button id="click-button">Click me!</button>
-        <div id="shop-container">
-            <h2>Shop</h2>
-            <div id="shop-items"></div>
-            <button id="open-shop">Open Shop</button>
+        <div id="game-layout">
+            <div id="left-panel">
+                <h1>Clicker Game</h1>
+                <div id="click-image-wrapper">
+                    <img id="click-image" src="assets/approved.png" alt="Click!">
+                </div>
+            </div>
+            <div id="right-panel">
+                <div id="score-timer-row">
+                    <div id="currency-display">Currency: 0</div>
+                    <div id="timer-display">Time: 0s</div>
+                </div>
+                <div id="shop-container">
+                    <h2>Shop</h2>
+                    <div id="shop-items"></div>
+                    <button id="open-shop">Open Shop</button>
+                </div>
+            </div>
         </div>
-        <div id="timer-display">Time: 0s</div>
     </div>
-    <script src="scripts/clicker.js"></script>
-    <script src="scripts/currency.js"></script>
-    <script src="scripts/shop.js"></script>
-    <script src="scripts/timer.js"></script>
+    <script src="./scripts/clicker.js"></script>
+    <script src="./scripts/currency.js"></script>
+    <script src="./scripts/shop.js"></script>
+    <script src="./scripts/timer.js"></script>
 </body>
 </html>

@@ -2,11 +2,40 @@
 
 let currency = 0;
 let timerInterval;
+let elapsedSeconds = 0;
 
 function startGame() {
     currency = 0;
     updateDisplay();
     startTimer();
+}
+
+function startTimer() {
+    elapsedSeconds = 0;
+    updateTimerDisplay();
+    timerInterval = setInterval(() => {
+        elapsedSeconds++;
+        updateTimerDisplay();
+    }, 1000);
+}
+
+function updateTimerDisplay() {
+    const timerDisplay = document.getElementById('timer-display');
+    timerDisplay.innerText = `Time: ${formatTime(elapsedSeconds)}`;
+}
+
+function formatTime(totalSeconds) {
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    if (hours > 0) {
+        return `${hours}h ${minutes}m ${seconds}s`;
+    } else if (minutes > 0) {
+        return `${minutes}m ${seconds}s`;
+    } else {
+        return `${seconds}s`;
+    }
 }
 
 function handleClick() {
@@ -19,18 +48,6 @@ function updateDisplay() {
     currencyDisplay.innerText = `Currency: ${currency}`;
 }
 
-function startTimer() {
-    timerInterval = setInterval(() => {
-        currency++;
-        updateDisplay();
-    }, 1000);
-}
+document.getElementById('click-image').addEventListener('click', handleClick);
 
-function stopTimer() {
-    clearInterval(timerInterval);
-}
-
-document.getElementById('click-button').addEventListener('click', handleClick);
-
-// Initialize the game when the window loads
 window.onload = startGame;
