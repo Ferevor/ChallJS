@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+#game-container {
+    display: grid;
+    margin: 20px auto;
+    grid-gap: 2px;
+    background: #444;
+    width: max-content;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wall { background: #333; }
+.box { background: #c96; }
+.player { background: #6c9; }
+.goal { background: #69c; }
+.box-on-goal { background: #fc0; }
