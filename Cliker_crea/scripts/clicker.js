@@ -1,11 +1,10 @@
-// filepath: c:\Users\Fabie\Documents\Ynov\ChallengeJS\Cliker_crea\scripts\clicker.js
+import { addCurrency } from './currency.js';
+import { getClickPower } from './shop.js';
 
-let currency = 0;
 let timerInterval;
 let elapsedSeconds = 0;
 
 function startGame() {
-    currency = 0;
     updateDisplay();
     startTimer();
 }
@@ -39,13 +38,12 @@ function formatTime(totalSeconds) {
 }
 
 function handleClick() {
-    currency++;
+    addCurrency(getClickPower());
     updateDisplay();
 }
 
 function updateDisplay() {
-    const currencyDisplay = document.getElementById('currency-display');
-    currencyDisplay.innerText = `Currency: ${currency}`;
+    // La currency est déjà affichée par currency.js
 }
 
 document.getElementById('click-image').addEventListener('click', handleClick);

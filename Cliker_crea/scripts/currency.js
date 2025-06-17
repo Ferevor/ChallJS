@@ -1,8 +1,6 @@
 // filepath: c:\Users\Fabie\Documents\Ynov\ChallengeJS\Cliker_crea\scripts\currency.js
 
-const initialCurrency = 0;
-
-let currentCurrency = initialCurrency;
+let currentCurrency = 0;
 
 function addCurrency(amount) {
     currentCurrency += amount;
@@ -25,4 +23,4 @@ function updateCurrencyDisplay() {
     }
 }
 
-export { initialCurrency, addCurrency, subtractCurrency };
+export { addCurrency, subtractCurrency, currentCurrency };
